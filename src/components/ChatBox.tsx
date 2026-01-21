@@ -32,7 +32,7 @@ export default function ChatBox() {
       ) : null}
 
       <div className="flex-1 overflow-auto p-3 space-y-3" id="chat-scroll" ref={scrollRef}>
-        {messages.map((m) => (
+        {messages.map((m: any) => (
           <MessageBubble key={m.id} role={m.role} content={m.content} />
         ))}
       </div>
